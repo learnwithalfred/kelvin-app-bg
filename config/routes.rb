@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :orders
+  resources :products
   resources :categories
   resources :campanies
   devise_for :users, path: 'api/auth', path_names: {
