@@ -52,3 +52,4 @@ gem 'devise-jwt'
 gem 'jsonapi-serializer'
 
 gem 'faker'
+gem 'cancancan'
