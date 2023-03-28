@@ -5,12 +5,12 @@ class CampaniesController < ApplicationController
   def index
     @campanies = Campany.all
 
-    render json: @campanies
+    render json: @campanies.to_json(include: [:products])
   end
 
   # GET /campanies/1
   def show
-    render json: @campany
+    render json: @campany.to_json(include: [:products])
   end
 
   # POST /campanies
