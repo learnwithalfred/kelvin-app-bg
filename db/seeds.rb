@@ -26,7 +26,7 @@ Category.create([
   Product.create!(
     name: Faker::Commerce.product_name,
     price: Faker::Commerce.price,
-    img: Faker::LoremFlickr.image(size: "300x300", search_terms: ['product']),
+    img: Faker::Avatar.image,
     description: Faker::Lorem.paragraph,
     campany_id: Campany.all.sample.id,
     category_id: Category.all.sample.id,
