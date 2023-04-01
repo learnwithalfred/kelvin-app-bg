@@ -18,7 +18,7 @@ class ProductsController < ApplicationController
     @product = Product.new(product_params)
     authorize! :create, @product
     if @product.save
-      render json: @product, status: :created, location: @product
+      render json: @product.to_json(include: [:campany, :category]), status: :created, location: @product
     else
       render json: @product.errors, status: :unprocessable_entity
     end

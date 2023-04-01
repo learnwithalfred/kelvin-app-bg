@@ -5,7 +5,7 @@ class CampaniesController < ApplicationController
   def index
     @campanies = Campany.all
 
-    render json: @campanies.to_json(include: [:products])
+    render json: @campanies
   end
 
   # GET /campanies/1

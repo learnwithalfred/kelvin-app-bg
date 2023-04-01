@@ -10,7 +10,6 @@ class OrdersController < ApplicationController
 
   # GET /orders/1
   def show
-    authorize! :read, @orders
     render json: @order.to_json(include: [:user, :product])
   end
 
