@@ -1,5 +1,5 @@
 <div align="center">
-  <h3><b>Let's Build an E-Learning Platform from Scratch with Ruby on Rails</b></h3>
+  <h3><b>Building an Online Shop from Scratch: React Tutorial Series</b></h3>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -7,28 +7,40 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[Rails_beginner_lesson\] ](#-rails_beginner_lesson-)
+- [📖 \[React_Rails_online_shop\] ](#-react_rails_online_shop-)
   - [🛠 Built With ](#-built-with-)
+    - [Key Features ](#key-features-)
   - [💻 Getting Started ](#-getting-started-)
+    - [API integration](#api-integration)
     - [Setup](#setup)
   - [👥 Authors ](#-authors-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [📝 License ](#-license-)
 
-# 📖 [Rails_beginner_lesson] <a name="about-project"></a>
+# 📖 [React_Rails_online_shop] <a name="about-project"></a>
 
-> In this course, we will learn how to build a Learning Management System (LMS) from scratch using Ruby on Rails. We will cover all the CRUD (Create, Read, Update, Delete) functionalities in Ruby and explore advanced topics such as authentication, authorization, associations, and RSpec testing
+> This project is a tutorial series on building an online shop from scratch using React. It covers building reusable components, loading data from a database using Redux Toolkit, user authentication, private routes, and securely handling user data using session and local storage. We will learn to load data from rails API backend
 
-> Youtube tutorial series [here](https://www.youtube.com/playlist?list=PLvkZrNqHvQkBKfPCF5zYw_OMJ-6231e8C)
+> Youtube tutorial series [here](https://www.youtube.com/playlist?list=PLvkZrNqHvQkCEBVaZNKGRN0ZaEBGDjBGU)
 
 ## 🛠 Built With <a name="built-with"></a>
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://redux-toolkit.js.org/">Redux Toolkit</a></li>
+    <li><a href="https://reactrouter.com/">React Router</a></li>
+    <li><a href="https://react-hook-form.com/">React form hook</a></li>
+  </ul>
+</details>
 
 <details>
   <summary>Server</summary>
   <ul>
     <li><a href="#" >Ruby on Rails</a></li>
-    <li><a href="#" >Devise gem</a></li>
+    <li><a href="#" >Devise jwt gem</a></li>
   </ul>
 </details>
 
@@ -39,17 +51,32 @@
   </ul>
 </details>
 
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+- **Integration of React with Rails**
+- **State management**
+- **Authentication and authorization**
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+### API integration
+
+- Clone the react front end [here](https://github.com/learnwithalfred/kelvin-app-bg)
+- Checkout the Youtube tutorial series [here](https://www.youtube.com/playlist?list=PLvkZrNqHvQkCEBVaZNKGRN0ZaEBGDjBGU)
 
 ### Setup
 
 Clone this repository to your desired folder and install the dependencies.:
 
 ```sh
-  git clone github.com/learnwithalfred/lesson.git
-  cd lesson
+  git clone github.com/learnwithalfred/kelvin-app-bg.git
+  cd  kelvin-app-bg
   bundle install
   rails server
 ```
