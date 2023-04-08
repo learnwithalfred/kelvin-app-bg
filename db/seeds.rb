@@ -21,7 +21,6 @@ Category.create([
   { name: "Gold" }
 ])
 
-# Create Products
 20.times do
   Product.create!(
     name: Faker::Commerce.product_name,
