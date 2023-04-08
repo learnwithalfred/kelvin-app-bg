@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class Ability
   include CanCan::Ability
 
@@ -12,6 +10,6 @@ class Ability
       can :create, Order
       can :read, Order, user_id: user.id
     end
-    can :manage, :all if user.role == "admin"
+    can :manage, :all if user.role == 'admin'
   end
 end

@@ -1,5 +1,5 @@
 class CampaniesController < ApplicationController
-  before_action :set_campany, only: %i[ show update destroy ]
+  before_action :set_campany, only: %i[show update destroy]
 
   # GET /campanies
   def index
@@ -39,13 +39,14 @@ class CampaniesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_campany
-      @campany = Campany.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def campany_params
-      params.require(:campany).permit(:name)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_campany
+    @campany = Campany.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def campany_params
+    params.require(:campany).permit(:name)
+  end
 end
